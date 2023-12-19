@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Images</title>
+    <title>Full Screen Images</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-
-    <h1>Embedded Images</h1>
 
     <!-- First Image -->
     <img src="1.jpg" alt="Description for Image 1">
@@ -20,4 +30,3 @@
 
 </body>
 </html>
-
