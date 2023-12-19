@@ -3,20 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Images</title>
+    <title>Responsive Image Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .image-container img {
+            width: 30%; /* Adjust the width as needed */
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+            .image-container img {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Embedded Images</h1>
+    <header>
+        <h1>Responsive Image Grid</h1>
+    </header>
 
-    <!-- First Image -->
-    <img src="1.jpg" alt="Description for Image 1">
+    <section>
+        <div class="image-container">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+        </div>
+    </section>
 
-    <!-- Second Image -->
-    <img src="2.jpg" alt="Description for Image 2">
-
-    <!-- Third Image -->
-    <img src="3.jpg" alt="Description for Image 3">
+    <footer>
+        <p>&copy; 2023 Your Website</p>
+    </footer>
 
 </body>
 </html>
